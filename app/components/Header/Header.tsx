@@ -13,7 +13,7 @@ export default function Header() {
         className="absolute inset-0 flex flex-col w-full h-full justify-center items-start z-10 px-6"
       >
         <h1 className="text-4xl">Katia Lemaire</h1>
-        <span className="ml-1 text-sm">Coordinatrice de scolarité</span>
+        <span className="ml-1">Coordinatrice pédagogique</span>
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ export default function Cards({
     <div
       onMouseEnter={() => setIsOnOver(true)}
       onMouseLeave={() => setIsOnOver(false)}
-      className="border-2 border-black/5 shadow rounded w-[48%] relative md:w-[32%] h-[230px]"
+      className="border-2 border-rose-300/65 shadow rounded w-[48%] relative md:w-[32%] h-[230px]"
     >
       {isOnHover ? (
         <Image

@@ -34,12 +34,12 @@ export default function Home() {
             <p className="text-justify text-lg">
               Parcours atypique comme nombre d&apos;entre nous, j&apos;ai fait
               des études d&apos;arts et évolué dans le monde des bibliotheques
-              au début de ma carrière. <br /> Mais le fil rouge de mon parcours
+              au début de ma carrière. Mais le fil rouge de mon parcours
               professionnel à toujours été l&apos;univers de l&apos;éducation.
               Aujourd&apos;hui mes missions au sein de l&apos;IHECF seront
               variés et corréspondent à mes aspirations profondes :
             </p>
-            <ul className="list-disc text-justify italic">
+            <ul className="list-disc text-justify italic text-rose-500">
               <li>Veiller au bien être des étudiants et des intervenants</li>
               <li>
                 Organiser au mieux le déroulé des journées au sein de
@@ -52,9 +52,13 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className="relative grow flex flex-col items-center justify-center border-t-2 md:mt-5 md:border-t-0 md:border-l-2 border-black/15 md:w-3/5">
-          <div className={`${playfairDisplay.className} text-3xl`}>
-            Qualités et Passions
+        <div className="relative grow flex flex-col items-center justify-center border-t-2 md:mt-5 md:border-t-0 md:border-l-2 border-rose-400/30 md:w-3/5">
+          <div className={`${playfairDisplay.className}`}>
+            <p className="text-3xl text-rose-300">Qualités et Passions</p>
+            <p className="text-xs text-center">
+              Survolez les élements pour voir <br /> apparaitres les
+              illustrations
+            </p>
           </div>
           <div className="grow flex flex-wrap gap-2 justify-center items-center w-full p-4 md:px-8 md:py-2">
             <Cards img={altristImage} text="Altruiste" />

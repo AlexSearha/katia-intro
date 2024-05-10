@@ -8,7 +8,7 @@ export default function Footer() {
       <Link
         href="https://alexsearha.github.io"
         target="_blank"
-        className="italic hover:underline hover:underline-offset-2 transition"
+        className="italic hover:underline hover:underline-offset-2 transition text-rose-400 hover:text-rose-600"
       >
         Alex Searha
       </Link>
