@@ -26,9 +26,7 @@ export default function Home() {
           <p className="text-center">{`Bonjour, je m'appelle Katia mélanie Lemaire et j'adore le préfou et mon amoureux développeur !`}</p>
         </div>
         <div className="grow flex flex-col items-center justify-center border-t-2 md:border-t-0 md:border-l-2 border-black/15 md:w-4/6">
-          <div className="grow flex flex-wrap gap-2 justify-center items-center w-full p-4 md:p-0">
-            <Cards img={testImage} text="Coucou" />
-            <Cards img={testImage} text="Coucou" />
+          <div className="grow flex flex-wrap gap-2 justify-center items-center w-full p-4 md:p-8">
             <Cards img={testImage} text="Coucou" />
             <Cards img={testImage} text="Coucou" />
             <Cards img={testImage} text="Coucou" />
