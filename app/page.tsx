@@ -1,12 +1,18 @@
 import Image from "next/image";
-import Photo from "@/public/photo.png";
 import Cards from "./components/Cards/Cards";
-import Link from "next/link";
-// images
-import testImage from "@/public/testCardImage.jpeg";
+import { lato, playfairDisplay } from "./fonts";
 import Header from "./components/Header/Header";
-import { lato } from "./fonts";
 import Footer from "./components/Footer/Footer";
+// images
+import Photo from "@/public/photo.webp";
+import altristImage from "@/public/altriste.webp";
+import artistiqueImage from "@/public/artistique.webp";
+import creativeImage from "@/public/creative.webp";
+import jardinageImage from "@/public/jardinage.webp";
+import meditationImage from "@/public/meditation.webp";
+import organiseeImage from "@/public/organisee.webp";
+// gif
+import animatedArrow from "@/public/animatedArrow.gif";
 
 export default function Home() {
   return (
@@ -14,26 +20,46 @@ export default function Home() {
       className={`${lato.className} flex min-h-screen flex-col items-center justify-between`}
     >
       <Header />
-      <div id="container" className="w-full grow flex flex-col md:flex-row">
-        <div className="grow flex flex-col justify-evenly items-center p-8 gap-2 md:w-2/6">
+      <div
+        id="introduce-container"
+        className="w-full grow flex flex-col md:flex-row"
+      >
+        <div className="grow flex flex-col justify-around items-center p-4 gap-4 md:w-2/5">
           <Image
             src={Photo}
-            height={250}
-            width={250}
+            height={400}
+            width={400}
             alt="photo Katia Lemaire"
             className="rounded shadow-md"
           />
-          <p className="text-center">{`Bonjour, je m'appelle Katia mélanie Lemaire et j'adore le préfou et mon amoureux développeur !`}</p>
-        </div>
-        <div className="grow flex flex-col items-center justify-center border-t-2 md:border-t-0 md:border-l-2 border-black/15 md:w-4/6">
-          <div className="grow flex flex-wrap gap-2 justify-center items-center w-full p-4 md:p-8">
-            <Cards img={testImage} text="Coucou" />
-            <Cards img={testImage} text="Coucou" />
-            <Cards img={testImage} text="Coucou" />
-            <Cards img={testImage} text="Coucou" />
-            <Cards img={testImage} text="Coucou" />
-            <Cards img={testImage} text="Coucou" />
+          <div className="flex flex-col gap-3 px-4 md:px-10">
+            <p className="text-justify text-lg">{`Parcours atypique comme nombre d'entre nous, j'ai fait des études d'arts et évolué dans le monde des bibliotheques au début de ma carrière. Mais le fil rouge de mon parcours professionnel à toujours été l'univers de l'éducation.Aujourd'hui mes missions au sein de l'IHECF seront variés et corréspondent à mes aspirations profondes :`}</p>
+            <ul className="list-disc text-justify italic">
+              <li>Veiller au bien être des étudiants et des intervenants</li>
+              <li>
+                Organiser au mieux le déroulé des journées au sein de
+                l&apos;institut
+              </li>
+              <li>
+                Participer à l&apos;animation et à la vie de l&apos;école pour
+                défendre et mettre en lumière ces valeurs et qualités
+              </li>
+            </ul>
           </div>
+        </div>
+        <div className="relative grow flex flex-col items-center justify-center border-t-2 md:mt-5 md:border-t-0 md:border-l-2 border-black/15 md:w-3/5">
+          <div className={`${playfairDisplay.className} text-3xl font-bold`}>
+            Mes Qualités
+          </div>
+          <div className="grow flex flex-wrap gap-2 justify-center items-center w-full p-4 md:px-8 md:py-2">
+            <Cards img={altristImage} text="Altruiste" />
+            <Cards img={creativeImage} text="Créative" />
+            <Cards img={organiseeImage} text="Organisée" />
+            <Cards img={artistiqueImage} text="Artisitique" />
+            <Cards img={jardinageImage} text="Jardinage" />
+            <Cards img={meditationImage} text="Méditation" />
+          </div>
+
           <Footer />
         </div>
       </div>

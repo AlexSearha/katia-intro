@@ -1,14 +1,20 @@
-import { playfairDisplay } from "@/app/fonts";
 import React from "react";
+import { playfairDisplay } from "@/app/fonts";
 
 export default function Header() {
   return (
     <div
       id="banner"
-      className={`${playfairDisplay.className} w-full bg-red-200 h-[130px] flex flex-col justify-center items-start p-6 border-b-2 border-black/15`}
+      className={`${playfairDisplay.className} w-full h-[130px] relative p-6  text-white shadow-md`}
     >
-      <h1 className="text-4xl">Katia Lemaire</h1>
-      <span className="ml-1 text-sm">Coordinatrice de scolarité</span>
+      <div className="absolute inset-0 z-0 blur-sm bg-header-bg bg-cover bg-center "></div>
+      <div
+        style={{ textShadow: "1px 1px 0 #000" }}
+        className="absolute inset-0 flex flex-col w-full h-full justify-center items-start z-10 px-6"
+      >
+        <h1 className="text-4xl">Katia Lemaire</h1>
+        <span className="ml-1 text-sm">Coordinatrice de scolarité</span>
+      </div>
     </div>
   );
 }
