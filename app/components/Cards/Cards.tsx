@@ -16,10 +16,16 @@ export default function Cards({
     <div
       onMouseEnter={() => setIsOnOver(true)}
       onMouseLeave={() => setIsOnOver(false)}
-      className="border-2 border-black/15 shadow w-[20%] h-[180px] rounded"
+      className="border-2 border-black/15 shadow rounded w-[48%] relative md:w-[20%] h-[180px]"
     >
       {isOnHover ? (
-        <Image src={img} alt="test" className="rounded" />
+        <Image
+          src={img}
+          alt="test"
+          layout="fill"
+          objectFit="cover"
+          className="rounded transition-colors hover:bg-red-400"
+        />
       ) : (
         <TextElement text={text} />
       )}

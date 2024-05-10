@@ -6,6 +6,7 @@ import Link from "next/link";
 import testImage from "@/public/testCardImage.jpeg";
 import Header from "./components/Header/Header";
 import { lato } from "./fonts";
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -13,8 +14,8 @@ export default function Home() {
       className={`${lato.className} flex min-h-screen flex-col items-center justify-between`}
     >
       <Header />
-      <div id="container" className="w-full grow flex">
-        <div className="w-2/6 grow flex flex-col justify-evenly items-center p-8">
+      <div id="container" className="w-full grow flex flex-col md:flex-row">
+        <div className="grow flex flex-col justify-evenly items-center p-8 gap-2 md:w-2/6">
           <Image
             src={Photo}
             height={250}
@@ -24,8 +25,8 @@ export default function Home() {
           />
           <p className="text-center">{`Bonjour, je m'appelle Katia mélanie Lemaire et j'adore le préfou et mon amoureux développeur !`}</p>
         </div>
-        <div className="w-4/6 grow flex flex-col items-center justify-center border-l-2 border-black/15">
-          <div className="grow flex flex-wrap gap-2 justify-center items-center w-full">
+        <div className="grow flex flex-col items-center justify-center border-t-2 md:border-t-0 md:border-l-2 border-black/15 md:w-4/6">
+          <div className="grow flex flex-wrap gap-2 justify-center items-center w-full p-4 md:p-0">
             <Cards img={testImage} text="Coucou" />
             <Cards img={testImage} text="Coucou" />
             <Cards img={testImage} text="Coucou" />
@@ -35,12 +36,7 @@ export default function Home() {
             <Cards img={testImage} text="Coucou" />
             <Cards img={testImage} text="Coucou" />
           </div>
-          <footer className="shrink h-12 flex justify-center items-center gap-1 text-sm">
-            Développé par{" "}
-            <Link href="https://alexsearha.github.io" target="_blank">
-              Alex Searha
-            </Link>
-          </footer>
+          <Footer />
         </div>
       </div>
     </main>
