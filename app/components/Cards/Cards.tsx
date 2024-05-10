@@ -18,7 +18,7 @@ export default function Cards({
       onMouseLeave={() => setIsOnOver(false)}
       className="border-2 border-black/5 shadow rounded w-[48%] relative md:w-[32%] h-[230px]"
     >
-      {!isOnHover ? (
+      {isOnHover ? (
         <Image
           src={img}
           alt="test"

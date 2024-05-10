@@ -53,8 +53,8 @@ export default function Home() {
           </div>
         </div>
         <div className="relative grow flex flex-col items-center justify-center border-t-2 md:mt-5 md:border-t-0 md:border-l-2 border-black/15 md:w-3/5">
-          <div className={`${playfairDisplay.className} text-3xl font-bold`}>
-            Mes Qualités
+          <div className={`${playfairDisplay.className} text-3xl`}>
+            Qualités et Passions
           </div>
           <div className="grow flex flex-wrap gap-2 justify-center items-center w-full p-4 md:px-8 md:py-2">
             <Cards img={altristImage} text="Altruiste" />
