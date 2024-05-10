@@ -11,8 +11,6 @@ import creativeImage from "@/public/creative.webp";
 import jardinageImage from "@/public/jardinage.webp";
 import meditationImage from "@/public/meditation.webp";
 import organiseeImage from "@/public/organisee.webp";
-// gif
-import animatedArrow from "@/public/animatedArrow.gif";
 
 export default function Home() {
   return (
@@ -33,7 +31,14 @@ export default function Home() {
             className="rounded shadow-md"
           />
           <div className="flex flex-col gap-3 px-4 md:px-10">
-            <p className="text-justify text-lg">{`Parcours atypique comme nombre d'entre nous, j'ai fait des études d'arts et évolué dans le monde des bibliotheques au début de ma carrière. Mais le fil rouge de mon parcours professionnel à toujours été l'univers de l'éducation.Aujourd'hui mes missions au sein de l'IHECF seront variés et corréspondent à mes aspirations profondes :`}</p>
+            <p className="text-justify text-lg">
+              Parcours atypique comme nombre d&apos;entre nous, j&apos;ai fait
+              des études d&apos;arts et évolué dans le monde des bibliotheques
+              au début de ma carrière. <br /> Mais le fil rouge de mon parcours
+              professionnel à toujours été l&apos;univers de l&apos;éducation.
+              Aujourd&apos;hui mes missions au sein de l&apos;IHECF seront
+              variés et corréspondent à mes aspirations profondes :
+            </p>
             <ul className="list-disc text-justify italic">
               <li>Veiller au bien être des étudiants et des intervenants</li>
               <li>
