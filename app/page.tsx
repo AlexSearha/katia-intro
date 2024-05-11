@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Cards from "./components/Cards/Cards";
 import { lato, playfairDisplay } from "./fonts";
@@ -11,8 +12,11 @@ import creativeImage from "@/public/creative.webp";
 import jardinageImage from "@/public/jardinage.webp";
 import meditationImage from "@/public/meditation.webp";
 import organiseeImage from "@/public/organisee.webp";
+import useScreenDetect from "./hooks/usescreenDetect";
 
 export default function Home() {
+  const isMobileScreenSize = useScreenDetect();
+
   return (
     <main
       className={`${lato.className} flex min-h-screen flex-col items-center justify-between`}
@@ -28,7 +32,7 @@ export default function Home() {
             height={400}
             width={400}
             alt="photo Katia Lemaire"
-            className="rounded shadow-md"
+            className="rounded-full shadow-md"
           />
           <div className="flex flex-col gap-3 px-4 md:px-10">
             <p className="text-justify text-lg">
@@ -39,7 +43,7 @@ export default function Home() {
               Aujourd&apos;hui mes missions au sein de l&apos;IHECF seront
               variés et corréspondent à mes aspirations profondes :
             </p>
-            <ul className="list-disc text-justify italic text-rose-500">
+            <ul className="list-disc text-justify italic font-bold text-rose-400">
               <li>Veiller au bien être des étudiants et des intervenants</li>
               <li>
                 Organiser au mieux le déroulé des journées au sein de
@@ -56,8 +60,8 @@ export default function Home() {
           <div className={`${playfairDisplay.className}`}>
             <p className="text-3xl text-rose-300">Qualités et Passions</p>
             <p className="text-xs text-center">
-              Survolez les élements pour voir <br /> apparaitres les
-              illustrations
+              {isMobileScreenSize ? "Cliquez sur les " : "Survolez les "}{" "}
+              élements pour voir <br /> apparaitres les illustrations
             </p>
           </div>
           <div className="grow flex flex-wrap gap-2 justify-center items-center w-full p-4 md:px-8 md:py-2">
