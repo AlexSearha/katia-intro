@@ -32,7 +32,7 @@ export default function Home() {
             height={400}
             width={400}
             alt="photo Katia Lemaire"
-            className="rounded-full shadow-md"
+            className="rounded-full shadow-black/60 shadow-lg"
           />
           <div className="flex flex-col gap-3 px-4 md:px-10">
             <p className="text-justify text-lg">
@@ -43,7 +43,7 @@ export default function Home() {
               Aujourd&apos;hui mes missions au sein de l&apos;IHECF seront
               variés et corréspondent à mes aspirations profondes :
             </p>
-            <ul className="list-disc text-justify italic font-bold text-rose-400">
+            <ul className="list-disc text-justify italic font-bold text-rose-300">
               <li>Veiller au bien être des étudiants et des intervenants</li>
               <li>
                 Organiser au mieux le déroulé des journées au sein de
