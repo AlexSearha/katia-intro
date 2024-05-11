@@ -58,7 +58,9 @@ export default function Home() {
         </div>
         <div className="relative grow flex flex-col items-center justify-center border-t-2 md:mt-5 md:border-t-0 md:border-l-2 border-rose-400/30 md:w-3/5">
           <div className={`${playfairDisplay.className}`}>
-            <p className="text-3xl text-rose-300">Qualités et Passions</p>
+            <p className="text-3xl text-rose-300 mt-5 md:mt-0">
+              Qualités et Passions
+            </p>
             <p className="text-xs text-center">
               {isMobileScreenSize ? "Cliquez sur les " : "Survolez les "}{" "}
               élements pour voir <br /> apparaitres les illustrations
@@ -68,7 +70,7 @@ export default function Home() {
             <Cards img={altristImage} text="Altruiste" />
             <Cards img={creativeImage} text="Créative" />
             <Cards img={organiseeImage} text="Organisée" />
-            <Cards img={artistiqueImage} text="Artisitique" />
+            <Cards img={artistiqueImage} text="Activités Manuelles" />
             <Cards img={jardinageImage} text="Jardinage" />
             <Cards img={meditationImage} text="Méditation" />
           </div>
