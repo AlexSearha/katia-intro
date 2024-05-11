@@ -43,7 +43,7 @@ export default function Home() {
               Aujourd&apos;hui, mes missions au sein de l&apos;IHECF seront
               variées et correspondent à mes aspirations profondes.
             </p>
-            <ul className="list-disc text-justify italic font-bold text-rose-300">
+            <ul className="list-disc text-justify italic font-bold text-rose-400">
               <li>Veiller au bien être des étudiants et des intervenants</li>
               <li>
                 Organiser au mieux le déroulé des journées au sein de
@@ -58,7 +58,7 @@ export default function Home() {
         </div>
         <div className="relative grow flex flex-col items-center justify-center border-t-2 md:mt-5 md:border-t-0 md:border-l-2 border-black/30 md:w-3/5">
           <div className={`${playfairDisplay.className}`}>
-            <p className="text-3xl text-rose-300 mt-5 md:mt-0">
+            <p className="text-3xl text-rose-400 mt-5 md:mt-0">
               Qualités et Passions
             </p>
             <p className="text-xs text-center">

@@ -35,7 +35,7 @@ export default function Cards({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={handleToggleClick}
-      className="border-2 border-rose-300/65 shadow rounded w-[48%] relative md:w-[32%] h-[230px]"
+      className="border-2 border-rose-400/65 shadow rounded w-[48%] relative md:w-[32%] h-[230px]"
     >
       {isOnHover ? (
         <Image
