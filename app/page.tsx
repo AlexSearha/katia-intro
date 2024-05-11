@@ -37,11 +37,11 @@ export default function Home() {
           <div className="flex flex-col gap-3 px-4 md:px-10">
             <p className="text-justify text-lg">
               Parcours atypique comme nombre d&apos;entre nous, j&apos;ai fait
-              des études d&apos;arts et évolué dans le monde des bibliotheques
+              des études d&apos;arts et évolué dans le monde des bibliothèques
               au début de ma carrière. Mais le fil rouge de mon parcours
-              professionnel à toujours été l&apos;univers de l&apos;éducation.
-              Aujourd&apos;hui mes missions au sein de l&apos;IHECF seront
-              variés et corréspondent à mes aspirations profondes :
+              professionnel a toujours été l&apos;univers de l&apos;éducation.
+              Aujourd&apos;hui, mes missions au sein de l&apos;IHECF seront
+              variées et correspondent à mes aspirations profondes.
             </p>
             <ul className="list-disc text-justify italic font-bold text-rose-300">
               <li>Veiller au bien être des étudiants et des intervenants</li>
