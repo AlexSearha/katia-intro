@@ -56,7 +56,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className="relative grow flex flex-col items-center justify-center border-t-2 md:mt-5 md:border-t-0 md:border-l-2 border-rose-400/30 md:w-3/5">
+        <div className="relative grow flex flex-col items-center justify-center border-t-2 md:mt-5 md:border-t-0 md:border-l-2 border-black/30 md:w-3/5">
           <div className={`${playfairDisplay.className}`}>
             <p className="text-3xl text-rose-300 mt-5 md:mt-0">
               Qualités et Passions
