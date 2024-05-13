@@ -6,7 +6,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 // images
 import Photo from "@/public/photo.webp";
-import altristImage from "@/public/altriste.webp";
+import altruistImage from "@/public/altriste.webp";
 import artistiqueImage from "@/public/artistique.webp";
 import creativeImage from "@/public/creative.webp";
 import jardinageImage from "@/public/jardinage.webp";
@@ -56,7 +56,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className="relative grow flex flex-col items-center justify-center border-t-2 md:mt-5 md:border-t-0 md:border-l-2 border-black/30 md:w-3/5">
+        <div className="relative grow flex flex-col items-center justify-center border-t-2 md:pt-5 md:border-t-0 md:border-l-2 border-black/10 md:w-3/5">
           <div className={`${playfairDisplay.className}`}>
             <p className="text-3xl text-rose-400 mt-5 md:mt-0">
               Qualités et Passions
@@ -67,7 +67,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grow flex flex-wrap gap-2 justify-center items-center w-full p-4 md:px-8 md:py-2">
-            <Cards img={altristImage} text="Altruiste" />
+            <Cards img={altruistImage} text="Altruiste" />
             <Cards img={creativeImage} text="Créative" />
             <Cards img={organiseeImage} text="Organisée" />
             <Cards img={artistiqueImage} text="Activités Manuelles" />
