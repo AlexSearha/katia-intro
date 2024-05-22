@@ -51,7 +51,7 @@ export default function Home() {
               </li>
               <li>
                 Participer à l&apos;animation et à la vie de l&apos;école pour
-                défendre et mettre en lumière ces valeurs et qualités
+                défendre et mettre en lumière ses valeurs et qualités
               </li>
             </ul>
           </div>
